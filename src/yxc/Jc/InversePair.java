@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 /**
- * @Author: shiyong
+ * @Author: sy
  * @CreateTime: 2024-10-04
  * @Description: 归并求逆序对
  * @Version: 1.0

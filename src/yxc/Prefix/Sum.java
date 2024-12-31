@@ -3,7 +3,7 @@ package yxc.Prefix;
 import java.util.Scanner;
 
 /**
- * @Author: shiyong
+ * @Author: sy
  * @CreateTime: 2024-10-07
  * @Description: 前缀和
  * @Version: 1.0

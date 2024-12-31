@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * @Author: shiyong
+ * @Author: sy
  * @CreateTime: 2024-10-04
  * @Description: 高精度加法
  * @Version: 1.0

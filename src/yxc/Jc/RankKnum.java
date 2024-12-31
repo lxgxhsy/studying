@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * @Author: shiyong
+ * @Author: sy
  * @CreateTime: 2024-09-13
  * @Description: 第k大的数字
  * @Version: 1.0

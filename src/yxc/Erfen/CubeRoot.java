@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * @Author: shiyong
+ * @Author: sy
  * @CreateTime: 2024-10-04
  * @Description: 数的三次方根
  * @Version: 1.0

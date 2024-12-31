@@ -2,7 +2,7 @@ package yxc.Jc;
 import java.util.*;
 
 /**
- * @Author: shiyong
+ * @Author: sy
  * @CreateTime: 2024-09-12
  * @Description: 快速排序
  * @Version: 1.0

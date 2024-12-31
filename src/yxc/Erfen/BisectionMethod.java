@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * @Author: shiyong
+ * @Author: sy
  * @CreateTime: 2024-10-04
  * @Description: 二分查找  数的范围
  * @Version: 1.0

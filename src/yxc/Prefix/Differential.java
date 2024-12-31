@@ -3,7 +3,7 @@ package yxc.Prefix;
 import java.util.Scanner;
 
 /**
- * @Author: shiyong
+ * @Author: sy
  * @CreateTime: 2024-10-07
  * @Description: 差分
  * 输入一个长度为 n 的整数序列 。

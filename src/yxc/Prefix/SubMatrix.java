@@ -3,7 +3,7 @@ package yxc.Prefix;
 import java.util.Scanner;
 
 /**
- * @Author: shiyong
+ * @Author: sy
  * @CreateTime: 2024-10-07
  * @Description: 子矩阵的和
  * 输入一个 n
