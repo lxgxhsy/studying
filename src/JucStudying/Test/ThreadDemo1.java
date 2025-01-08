@@ -1,6 +1,6 @@
 package JucStudying.Test;
 
-import jdk.nashorn.internal.runtime.logging.Logger;
+
 
 /**
  * @Author: shiyong
@@ -32,7 +32,7 @@ import jdk.nashorn.internal.runtime.logging.Logger;
  * @Version: 1.0
  */
 
-@Logger
+
 public class ThreadDemo1 {
 	public static void main(String[] args) {
 		long begin = System.currentTimeMillis();

@@ -1,5 +1,7 @@
 package Jichu.Test;
 
+import java.math.BigDecimal;
+
 /**
  * @Author: sy
  * @CreateTime: 2024-09-12
@@ -10,6 +12,7 @@ package Jichu.Test;
 
 public class Demo {
 	public static void main(String[] args) {
+
 		int r = 1;
 		for (int i = 0; i < 10; i++) {
 			int k = 0;
