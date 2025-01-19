@@ -3,7 +3,7 @@ package JucStudying.Test;
 
 
 /**
- * @Author: shiyong
+ * @Author: sy
  * @CreateTime: 2024-12-31
  * @Description:
  * Runnable 创建线程方式：创建线程类，匿名内部类方式

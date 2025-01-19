@@ -1,7 +1,7 @@
 package JucStudying.Test;
 
 /**
- * @Author: shiyong
+ * @Author: sy
  * @CreateTime: 2025-01-02
  * @Description: 消除死锁、
  * 顺序推进合理 就不会死锁 唯一的一个资源 谁拿到了就让谁继续 优先原则

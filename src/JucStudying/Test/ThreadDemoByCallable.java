@@ -4,7 +4,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
 
 /**
- * @Author: shiyong
+ * @Author: sy
  * @CreateTime: 2025-01-02
  * @Description: 实现Callable接口
  * 1. 定义一个线程任务类实现 Callable 接口，申明线程执行的结果类型

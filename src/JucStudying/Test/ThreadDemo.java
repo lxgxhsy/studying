@@ -1,7 +1,7 @@
 package JucStudying.Test;
 
 /**
- * @Author: shiyong
+ * @Author: sy
  * @CreateTime: 2024-12-31
  * @Description:
  * 线程类已经继承了 Thread 类无法继承其他类了，功能不能通过继承拓展（单继承的局限性）

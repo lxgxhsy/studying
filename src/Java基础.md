@@ -187,3 +187,47 @@ BigDecimal y = b.subtract(c);
 
 System.out.println(x.compareTo(y));// 0
 ```
+
+```html
+#include <iostream>
+
+using namespace std;
+
+const int N = 1000010;
+
+int n;
+int q[N], tmp[N];
+
+void merge_sort(int q[], int l, int r)
+{
+    if (l >= r) return; //如果区间个数是1个或者没有，return
+
+    int mid = l + r >> 1;
+
+    merge_sort(q, l, mid), merge_sort(q, mid + 1, r);//递归排左边和右边
+
+    int k = 0, i = l, j = mid + 1;//k表示tmp里面数的个数(两个序列合并了几个数)i是左半边的起点，j是右半边的起点
+    while(i <= mid && j <= r) //i<=左半边边界，j<=右半边边界
+    {
+        if(q[i] <= q[j]) tmp[k ++] = q[i ++];//答案把q[i]拿过来
+        else tmp[k ++] = q[j ++];
+    }
+    while(i <= mid) tmp[k ++] = q[i ++];//把剩下的加上
+    while(j <= r) tmp[k ++] = q[j ++];
+
+    for(i = l, j = 0; i <= r; i ++, j ++) q[i] = tmp[j];//把存在tmp的结果复制到q里面
+
+}
+
+int main(){
+         scanf("%d", &n);
+    for (int i = 0; i < n; i ++ ) scanf("%d", &q[i]);
+
+    merge_sort(q, 0, n - 1);
+
+    for (int i = 0; i < n; i ++ ) printf("%d ", q[i]);
+
+    return 0;
+}
+```
+

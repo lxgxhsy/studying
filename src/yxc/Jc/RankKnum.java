@@ -25,6 +25,12 @@ public class RankKnum {
 		System.out.println(q[k - 1]);
 	}
 
+	/**
+	 * 快速排序
+	 * @param q
+	 * @param l
+	 * @param r
+	 */
 	public static void quickSort(int[] q, int l, int r) {
 
 		if (l >= r) {

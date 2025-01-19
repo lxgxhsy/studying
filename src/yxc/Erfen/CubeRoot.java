@@ -32,5 +32,6 @@ public class CubeRoot {
 			}
 			System.out.printf("%.6f\n", l);
 		}
+		System.out.printf("%.6f\n", l);
 	}
 }

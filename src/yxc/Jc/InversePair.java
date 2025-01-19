@@ -23,7 +23,7 @@ public class InversePair {
 		for (int i = 0; i < n; i++) {
 			a[i] = scanner.nextInt();
 		}
-		System.out.println(mergeSort(a, 0, n - 1));
+		System.out.println(merge(a, 0, n - 1));
 		scanner.close();
 	}
 
@@ -53,5 +53,36 @@ public class InversePair {
 			a[i] = tmp[j];
 		}
 		return res;
+	}
+	public static long merge(int[] a, int l, int r) {
+		if(l >= r) {
+			return 0;
+		}
+		int mid = l + r >> 1;
+		long res = mergeSort(a, l, mid) + mergeSort(a, mid + 1, r);
+		int tmp[] = new int[r - l + 1];
+		int k = 0, i = l, j = mid + 1;
+		while(i <= mid && j <= r){
+			if(a[i] <= a[j]){
+				tmp[k ++] = a[i ++];
+			}else{
+				res += mid - i + 1;
+
+				tmp[k ++] = a[j ++];
+			}
+		}
+
+		while(i <= mid) {
+			tmp[k ++] = a[i ++];//把剩下的加上
+		}
+		while(j <= r) {
+			tmp[k ++] = a[j ++];
+		}
+
+		for(i = l, j = 0; i <= r; i ++, j ++) {
+			a[i] = tmp[j];//把存在tmp的结果复制到q里面
+		}
+		return res;
+
 	}
 }
