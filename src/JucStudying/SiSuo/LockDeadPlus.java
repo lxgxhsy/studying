@@ -75,7 +75,7 @@ public class LockDeadPlus {
 			connection.setRequestMethod("HEAD");
 			connection.setConnectTimeout(2000); // 设置连接超时为2秒
 			int responseCode = connection.getResponseCode();
-			if (responseCode == 200) {
+			if (responseCode == HttpURLConnection.HTTP_OK) {
 				System.out.println("网络连接正常");
 			} else {
 				System.out.println("网络不可达，响应码：" + responseCode);
