@@ -13,7 +13,7 @@ import lombok.Data;
 
 	@Data
 	public class User {
-		public static String name="Hydra";
+		private static String name="Hydra";
 		int age;
 	}
 

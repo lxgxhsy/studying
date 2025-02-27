@@ -15,7 +15,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME) // 必须设置为 RUNTIME
 public @interface NotNull {
 
-	String mustRole () default "user";
+	// --注释掉检查 (2025/2/25 20:27):String mustRole () default "user";
 
 
 }

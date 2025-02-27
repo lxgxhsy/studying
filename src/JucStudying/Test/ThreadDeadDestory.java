@@ -10,8 +10,8 @@ package JucStudying.Test;
 
 
 public class ThreadDeadDestory {
-		private static Object resource1 = new Object();
-		private static Object resource2 = new Object();
+		private static final Object resource1 = new Object();
+		private static final Object resource2 = new Object();
 
 		public static void main(String[] args) {
 			new Thread(() -> {

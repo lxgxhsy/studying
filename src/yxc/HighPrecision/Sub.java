@@ -29,7 +29,7 @@ public class Sub {
 		for (int i = s2.length() - 1; i >= 0; i --) {
 			B.add(s2.charAt(i) - '0');
 		}
-		if(!cmp(A,B)){
+		if(cmp(A, B)){
 			System.out.print("-");
 		}
 		List<Integer> C = sub(A,B);
@@ -38,7 +38,7 @@ public class Sub {
 		}
 	}
 	public static List<Integer> sub(List<Integer> A, List<Integer> B){
-        if(!cmp(A,B)){
+        if(cmp(A, B)){
         	return sub(B,A);
         }
 
@@ -70,14 +70,14 @@ public class Sub {
 
 	public static boolean cmp(List<Integer> A, List<Integer> B){
 		if(A.size() != B.size()){
-			return A.size() > B.size();
+			return A.size() <= B.size();
 		}
 		for (int i = A.size() - 1; i >= 0; i --) {
           if(!A.get(i).equals(B.get(i))){
-          	return A.get(i) > B.get(i);
+          	return A.get(i) <= B.get(i);
           }
 		}
 
-		return true;
+		return false;
 	}
 }

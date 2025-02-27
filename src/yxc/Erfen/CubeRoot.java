@@ -15,7 +15,7 @@ import java.io.InputStreamReader;
 
 
 public class CubeRoot {
-	static double ESP = 1e-8;
+	static final double ESP = 1e-8;
 
 	public static void main(String[] args)throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));

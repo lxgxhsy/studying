@@ -180,30 +180,37 @@ public class ImplementsRunnable implements Runnable {
 
 实现Callable接口<br />
 和上一种方式类似，只不过这种方式可以拿到线程执行完的返回值，如下：<br />
-```java
-public class ImplementsCallable implements Callable<String> {
-@Override
-public String call() throws Exception {
-  System.out.println("3......");
-  return "zhuZi";
-}
 
-    public static void main(String[] args) throws Exception {
-        ImplementsCallable callable = new ImplementsCallable();
-        FutureTask<String> futureTask = new FutureTask<>(callable);
-        new Thread(futureTask).start();
-        System.out.println(futureTask.get());
-    }
+```java
+
+@SuppressWarnings("InstantiatingAThreadWithDefaultRunMethod")
+public class ImplementsCallable implements Callable<String> {
+	@Override
+	public String call() throws Exception {
+		System.out.println("3......");
+		return "zhuZi";
+	}
+
+	public static void main(String[] args) throws Exception {
+		ImplementsCallable callable = new ImplementsCallable();
+		FutureTask<String> futureTask = new FutureTask<>(callable);
+		new Thread(futureTask).start();
+		System.out.println(futureTask.get());
+	}
 }
 ```
 实现Callable接口<br />
+
 ```java
-public class ThreadDemoByCallable implements Callable<String>{
+
+@SuppressWarnings("InstantiatingAThreadWithDefaultRunMethod")
+public class ThreadDemoByCallable implements Callable<String> {
 
 	@Override
 	public String call() throws Exception {
 		return Thread.currentThread().getName() + "->" + "Hello World";
 	}
+
 	public static void main(String[] args) {
 		ThreadDemoByCallable call = new ThreadDemoByCallable();
 		FutureTask<String> task = new FutureTask<>(call);
@@ -212,7 +219,7 @@ public class ThreadDemoByCallable implements Callable<String>{
 		try {
 			String s = task.get(); // 获取call方法返回的结果（正常/异常结果）
 			System.out.println(s);
-		}  catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
@@ -280,15 +287,18 @@ ThreadGroup group = new ThreadGroup("groupName");
 
 **1.7、使用FutureTask类**<br />
 >>这个和之前实现Callable接口的方式差不多，只不过用匿名形式创建Callable，如下：
+
 ```java
+
+@SuppressWarnings("InstantiatingAThreadWithDefaultRunMethod")
 public class UseFutureTask {
-public static void main(String[] args) {
-FutureTask<String> futureTask = new FutureTask<>(() -> {
-System.out.println("7......");
-return "zhuZi";
-});
-new Thread(futureTask).start();
-}
+	public static void main(String[] args) {
+		FutureTask<String> futureTask = new FutureTask<>(() -> {
+			System.out.println("7......");
+			return "zhuZi";
+		});
+		new Thread(futureTask).start();
+	}
 }
 ```
 

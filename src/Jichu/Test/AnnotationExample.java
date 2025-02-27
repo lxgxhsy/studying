@@ -15,7 +15,7 @@ import java.lang.reflect.Field;
 // 自定义注解
 
 public class AnnotationExample {
-	public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException,Exception {
+	public static void main(String[] args) throws Exception {
 		// 获取目标类和目标对象
 		Class<?> targetClass  = Class.forName("Jichu.Test.TargetObject");
 		TargetObject targetObject = (TargetObject) targetClass.getDeclaredConstructor().newInstance();

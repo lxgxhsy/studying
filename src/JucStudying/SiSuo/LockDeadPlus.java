@@ -12,8 +12,8 @@ import java.net.URL;
 
 
 public class LockDeadPlus {
-	public static Object resources1 = new Object();
-	public static Object resources2 = new Object();
+	public static final Object resources1 = new Object();
+	public static final Object resources2 = new Object();
 
 	public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package Jichu.Test;
 
-import lombok.Data;
+
 import sun.misc.Unsafe;
 
 import java.lang.reflect.Field;
@@ -15,6 +15,8 @@ import java.lang.reflect.Field;
 
 public class UnsafeDemo {
 	public static void main(String[] args) throws Exception {
+
+
 			User user=new User();
 			Field field = Unsafe.class.getDeclaredField("theUnsafe");
 			field.setAccessible(true);

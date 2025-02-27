@@ -16,9 +16,9 @@ import java.util.Scanner;
 
 
 public class Differential {
-	static int N = 1000010;
-	static int[] a = new int[N];
-	static int[] b = new int[N];
+	static final int N = 1000010;
+	static final int[] a = new int[N];
+	static final int[] b = new int[N];
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
